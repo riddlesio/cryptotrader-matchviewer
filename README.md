@@ -1,4 +1,4 @@
-# Golad game match viewer
+# Crypto Trader game match viewer
 
 ## Setting up
 
@@ -12,8 +12,8 @@ accessible:
 To start developing, execute the following commands:
 
 ```
-git clone https://github.com/riddlesio/golad-matchviewer.git
-cd golad-matchviewer
+git clone https://github.com/riddlesio/cryptotrader-matchviewer
+cd cryptotrader-matchviewer
 npm install
 npm run dev-build
 ```
