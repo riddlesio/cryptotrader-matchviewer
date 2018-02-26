@@ -1,0 +1,27 @@
+{
+  "canvas": {
+    "width": 960,
+    "height": 540
+  },
+  "chart": {
+    "margin": {
+      "left": 62,
+      "right": 62,
+      "top": 26,
+      "bottom": 50
+    },
+    "showGrid": true,
+    "mouseMoveEvent": true,
+    "panEvent": true,
+    "zoomEvent": true,
+    "zoomAnchor": false,
+    "clamp": false,
+    "colors": {
+      "value": "green",
+      "USDT": "blue",
+      "ETH": "purple",
+      "BTC": "orange",
+      "orders": "#b48a46"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crypto Trader by Riddles.io</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {}
+
+		#player {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+
+			border: none;
+		}
+
+		.u-wrapper {
+			max-width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.u-warlight2Ratio {
+			position: relative;
+		}
+
+		.u-warlight2Ratio:before {
+			display: block;
+			content: "";
+			width: 100%;
+			padding-top: calc(540 / 960 * 100%);
+		}
+	</style>
+</head>
+<body>
+	<div class="u-wrapper u-warlight2Ratio">
+		<iframe
+			id="player"
+			src="./player.html"
+			allowfullscreen
+			mozallowfullscreen
+			webkitallowfullscreen></iframe>
+	</div>
+</body>
+</html>

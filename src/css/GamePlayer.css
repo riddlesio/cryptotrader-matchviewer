@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.GamePlayer {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.GamePlayer-button {
+    min-width: 6.0rem;
+    background: transparent;
+    border: none;
+    color: #fbfbfb;
+    font-size: 1.6rem;
+}
+
+.GamePlayer-range {
+    height: inherit;
+    padding: 0;
+}
+
+.Button:hover {
+    color: white;
+}
+
+.GamePlayer-button:not(:first-child) {
+    margin-left: 1.0rem;
+}
+
+.GamePlayer-chrome {
+    min-height: 4rem;
+    height: 4rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 2;
+}
+
+.GamePlayer-view {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.GamePlayer-dropdown {
+    max-height: 93vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.GamePlayer-dropdown.is-collapsed .Dropdown-item:not(.is-selected) {
+    height: 0;
+}
+
+.Dropdown-item {
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    line-height: 2.0rem;
+    overflow: hidden;
+    transition: height 0.25s linear;
+}
+
+.Dropdown-item.is-selected,
+.Dropdown.is-expanded .Dropdown-item {
+    height: auto;
+}
+
+.u-row {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.u-grow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.u-hidden {
+    display: none;
+}

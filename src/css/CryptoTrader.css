@@ -1,0 +1,101 @@
+.CryptoTrader-wrapper {
+    height: 100%;
+}
+.CryptoTrader {
+    height: 100%;
+}
+.CryptoTrader-chart-wrapper {
+    height: calc(100% - 72px);
+}
+
+.ui-top {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+}
+.ui-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 10;
+    margin: 0 60px 0 10px;
+}
+
+.Tabs {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 4px;
+    font-size: 1.3rem;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.Tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 7px;
+    color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid transparent;
+}
+.Tab.Tab--selected {
+    color: rgba(0, 0, 0, 1);
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    cursor: default;
+}
+
+.Checkboxes {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.Checkboxes-left, .Checkboxes-right {
+    display: flex;
+}
+.Checkbox {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.Player {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+.player-avatar {
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.player-score {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* We're going to hide the controls, except fullscreen button */
+.GamePlayer .GamePlayer-chrome {
+    background: rgba(0, 0, 0, 0.05);
+    justify-content: flex-end;
+}
+.GamePlayer .GamePlayer-chrome > * {
+    display: none;
+}
+.GamePlayer .GamePlayer-chrome > *:last-child {
+    display: initial;
+    color: #272727;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

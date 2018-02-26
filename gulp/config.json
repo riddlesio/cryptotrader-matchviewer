@@ -1,0 +1,36 @@
+{
+    "css": {
+        "src": "./src/css/*.css",
+        "bundle": {
+            "name": "style.css",
+            "dest": "./web/css/"
+        },
+        "autoprefixer": {
+            "browsers": ["last 3 versions"]
+        }
+    },
+
+    "copyHtml": {
+        "src": "./src/html/*.html",
+        "dest": "./web/"
+    },
+
+    "copyFonts": {
+        "src": "./src/fonts/**/*",
+        "dest": "./web/fonts/"
+    },
+
+    "images": {
+        "src": "./src/img/*",
+        "dest": "./web/img/"
+    },
+
+    "webpack": {
+        "configPath": "webpack.config.js",
+        "src": "./src/js/bootstrap.js",
+        "bundle": {
+            "name": "app.js"
+        },
+        "dest": "./web/js"
+    }
+}
