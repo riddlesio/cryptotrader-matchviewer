@@ -76,6 +76,7 @@
 .player-avatar {
     border-radius: 50%;
     margin: 0 5px;
+    height: 26px;
 }
 .player-score {
     margin-left: 10px;
